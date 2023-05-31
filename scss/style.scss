@@ -1,4 +1,6 @@
-
+@import "utilities";
+@import "config";
+@import "btnConfig";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,14 +22,51 @@ a {
 }
 
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
+  background-color: #000814;
+  color: white;
+  height: 600px;
+}
+.hero nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  // Take a look at the other files we've built already. How can they be useful here?
+.hero nav ul {
+  display: flex;
+  list-style-type: none;
+}
 
-  // Also, take time to review the features of SCSS we've already covered:
-  // 1. $variables
-  // 2. nesting (dont forget about the ampersand (&) parent selector!)
-  // 3. At-Rules
+.hero nav li {
+  padding: 15px;
+}
+
+.hero nav a {
+  color: white;
+}
+
+.hero nav a:hover {
+  color: #a2d0fc;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero-content img {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+.my-1 {
+  margin: 1rem 0;
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
